@@ -5,7 +5,7 @@
 body{
   max-width: 1200px;
   background-color: #F7E8F2;
- font-family: 'IM Fell French Canon', serif;
+  font-family: 'IM Fell French Canon', serif;
 }
 h1{
   text-align: center;
@@ -22,30 +22,13 @@ li{
   padding: 8px;
   font-weight: bold;
 }
-  a{
-    color: black;
-  }
+a{
+  color: black;
+}
 .image{
   margin: 0 auto;
-  }
+}
 
-.grid{
-  display: grid;
-  grid-template-columns: minmax(100px, 600px) minmax(100px, 600px) minmax(100px, 600px);
-  justify-content: center;
-}
-.navigation{
-  position: relative;
-  left: 260px;
-  top: 100px;
-}
-.about {
-  position: relative;
-  right: 18pxpx;
-  top: 120px;
-  width: 300px;
-  font-weight: bold;
-}
 .footer{
   text-align: center;
   margin: 80px;
@@ -62,4 +45,24 @@ li{
 }
 a:hover{
   opacity: 0.7;
+}
+
+@media screen and (min-width: 1170px) {
+  .grid{
+    display: grid;
+    grid-template-columns: minmax(100px, 600px) minmax(100px, 600px) minmax(100px, 600px);
+    justify-content: center;
+  }
+  .navigation{
+    position: relative;
+    left: 260px;
+    top: 100px;
+  }
+  .about {
+    position: relative;
+    right: 18pxpx;
+    top: 120px;
+    width: 300px;
+    font-weight: bold;
+  }
 }
